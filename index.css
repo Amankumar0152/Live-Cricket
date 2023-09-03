@@ -3,9 +3,16 @@
     padding: 0px;
     box-sizing: border-box;
 }
-body{
-    background:linear-gradient(to right, #487dd8, #a0e03f);
+body h1{
+  text-align: center;
+  color: rgb(24, 99, 238);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
 }
+/*body{
+    background:linear-gradient(to right, #487dd8, #a0e03f);
+}*/
 .header h1{
     padding: 10px 10px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -32,6 +39,40 @@ body{
   border-bottom-left-radius: 5%;
   border-bottom-right-radius: 5%; */
 }
+
+
+/*added about tournamnet's */
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.tournament-info {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.prizes {
+  margin-top: 20px;
+}
+.prizes li{
+  font-size: 21px;
+  color:cornflowerblue;
+}
+
+.requirements {
+  margin-top: 20px;
+}
+
+
 .entry h1{
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -44,16 +85,15 @@ body{
     padding: 15px;
 }
 .entry h3{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .entry h4{
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     font-size: 30px;
-    color:whitesmoke;
+    color:black;
 }
 
 .entry h4 a{
@@ -77,7 +117,7 @@ body{
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
-    color: #ffffff;
+    color:#000;
 }
 .header img{
     border-radius: 50%;
@@ -119,6 +159,7 @@ body{
 }
 
 .container h1{
+  font-size: 24px;
     text-align: center;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgb(47, 109, 223);
@@ -130,6 +171,34 @@ body{
     color: orange;
     font-size: 20px;
 }
+
+
+/* table starting from here*/
+table {
+  color: white;
+  background-color: darkgray;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 80%;
+  border: 1px solid #ddd;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th, td {
+  text-align: left;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 16px;
+  font-weight:bold;
+  padding-bottom: 2%;
+}
+
+/*tr:nth-child(even) {
+  background-color:#f2f2f2;
+}*/
+
+
+
 .button-next a {
     text-decoration: none;
     display: inline-block;
@@ -163,13 +232,13 @@ body{
 }
 .footer > a{
     text-decoration: none;
-    color: white;
+    color: #000;
 }
 .footer{
-    color: white;
+    color: #000;
 }
 .footer > a:hover{
-    color: greenyellow;
+    color:rgb(7, 84, 227);
 
 }
 .footer{
@@ -186,7 +255,7 @@ body{
 /* Navbar container */
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color:#000;
     font-family: Arial;
   }
   
@@ -194,7 +263,7 @@ body{
   .navbar a {
     float: left;
     font-size: 16px;
-    color: white;
+    color:white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -282,7 +351,7 @@ body{
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: bold;
         font-size: 18px;
-        color:whitesmoke;
+        color:rgb(24, 99, 238);
     }
     
     .entry h4 a{
@@ -344,5 +413,69 @@ body{
       clear: both;
       display:inline-block;
     }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    th, td {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      text-align: center;
+      font-weight: bold;
+      padding: 18px;
+      font-size:14px;
+    }
+
+    .teams table{
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .teams th, td{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      text-align: center;
+      font-weight: bold;
+      padding: 16px;
+      font-size:12px;
+    }
+    
+    /*tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }*/
+
+    /*Tournamnets details added new one*/
+
+    h1 {
+      font-size: 36px;
+      margin: 0;
+  }
+  
+  .container {
+    max-width:auto;
+      margin: 0 auto;
+      padding: 20px;
+  }
+  
+  .tournament-info {
+      background-color: #f2f2f2;
+      padding: 20px;
+      border-radius: 10px;
+  }
+  
+  .prizes {
+      margin-top: 20px;
+  }
+  
+  .requirements {
+      margin-top: 20px;
+  }
     
   }

@@ -4,20 +4,21 @@
     box-sizing: border-box;
 }
 body{
-    background: linear-gradient(to right, #db7592, #d02519);
+    background:white;
 }
 .header h1{
     padding: 10px 10px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     text-align: center;
-    font-size: 40px;
+    font-size: 26px;
 }
 .header h2{
+  font-size: 20px;
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
-    color: yellow;
+    color:black;
 }
 .header h1 p{
     color: white;
@@ -57,15 +58,12 @@ body{
 }
 
 .container h1{
+  font-size: 18px;
     text-align: center;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgb(47, 109, 223);
 }
-.container h3{
-    text-align: center;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(47, 109, 223);
-}
+
 .content h2{
     padding-left: 570px;
     font-weight: bold;
@@ -89,9 +87,17 @@ body{
     color: black;
   }
   
-  .next {
+  .next{
     background-color: #04AA6D;
     color: white;
+  }
+
+  /*from 2nd table p*/
+  .nextmatch p{
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
   .round {
@@ -99,16 +105,18 @@ body{
   }
   
 .footer{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
     text-align: center;
     padding-top: 50px;
     font-size: 16px;
 }
 .footer > a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 .footer{
-    color: white;
+    color: black;
 }
 .footer > a:hover{
     color: greenyellow;
@@ -123,6 +131,24 @@ body{
     border-bottom-right-radius:20px ;
     border-top-left-radius:20px ;
     border-top-right-radius:20px ;
+}
+
+table {
+  color: white;
+  background-color: darkgray;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 80%;
+  border: 1px solid #ddd;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th, td {
+  text-align: left;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 16px;
+  font-weight:bold;
 }
 
 
@@ -196,8 +222,64 @@ body{
     display: block;
   }
 
+  .next {
+    table {
+      width: 100%;
+      margin: 20px auto;
+      border-collapse: collapse;
+  }
+  th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: bold;
+      color: black;
+  }
+  th {
+      background-color:darkgray;
+      color: #000;
+  }
+  }
 
 @media only screen and (max-width:1080px){
+  .next{
+    table {
+      width: 100%;
+      margin: 20px auto;
+      border-collapse: collapse;
+  }
+  th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: bold;
+      font-size: 12px;
+      color: black;
+  }
+  th {
+      background-color:darkgray;
+      color: #000;
+  }
+  }
+
+  table {
+    color: white;
+    background-color: darkgray;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  th, td {
+    text-align: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 16px;
+    font-weight:bold;
+    font-size: 70%;
+  }
     .header h1{
       font-size: 30px;
     }
