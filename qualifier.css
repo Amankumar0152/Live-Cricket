@@ -203,12 +203,11 @@ color: crimson;
     }
 
     .navbar a {
-      font-size: 26px;
+      font-size:40px;
     }
     .dropdown .dropbtn {
-      font-size: 26px;
+      font-size: 40px;
     }
-
     .versus {
       font-size: 30px;
       font-weight: bold;
